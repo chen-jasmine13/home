@@ -170,3 +170,9 @@ figure img {
   font-size: 18px;
   text-align: center;
 }
+
+/* formats validator */
+.validator{
+    width: 150px;
+    height: 50px;
+}
