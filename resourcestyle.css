@@ -73,3 +73,9 @@ p {
   background-color: #e8e8ff;
   filter: drop-shadow(7px 7px 2px rgba(0, 0, 0, 0.3));
 }
+
+/* formats validator */
+.validator {
+  width: 75px;
+  height: 25px;
+}
