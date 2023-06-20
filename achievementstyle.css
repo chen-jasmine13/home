@@ -97,14 +97,21 @@ nav li a:hover {
 }
 
 /* formats text in div */
-.gallery>div>ul,
-.gallery>div>p {
+.gallery>div>ul, {
   position: absolute;
   color: white;
   margin-top: 12.5px;
   margin-left: 12.5px;
 }
-
+.gallery>div>p {
+  position: absolute;
+  font-size: 18px;
+  color: white;
+  margin-top: 12.5px;
+  margin-left: 10%;
+  margin-right:10%
+}
+  
 /* formats header in div */
 .gallery>.debut>h2,
 .gallery>.speaknow>h2,
@@ -120,7 +127,6 @@ nav li a:hover {
 .gallery>.speaknow>ul,
 .gallery>.reputation>ul,
 .gallery>.lover>ul,
-.gallery>.fearlesstv>p,
 .gallery>.redtv>ul {
   top: 55px;
   font-size: 18px;
@@ -135,7 +141,7 @@ nav li a:hover {
   font-size: 60px;
 }
 
-.gallery>.midnights>h2, {
+.gallery>.midnights>h2 {
   font-size: 48px;
 }
 
