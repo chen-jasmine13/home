@@ -2,8 +2,9 @@
 body {
   background-color: white;
   padding: 0;
-  margin: 0;
-  margin-bottom: 20px
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 0;
 }
 
 /* header size */
@@ -25,9 +26,8 @@ h1 {
 }
 
 h1>a {
-  font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
+  font-family: "Baskerville", "Baskerville Old Face", "Garamond", "Times New Roman", "serif";
   font-size: 2.2em;
-  font-weight: 5px;
   color: white;
   text-decoration: none;
 }
