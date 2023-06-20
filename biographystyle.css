@@ -158,14 +158,14 @@ figure img {
 
 /* formats image caption */
 .captionwhite>figcaption {
-  size: 10px;
+  font-size: 10px;
   color: white;
   font-size: 18px;
   text-align: center;
 }
 
 .captionblue>figcaption {
-  size: 10px;
+  font-size: 10px;
   color: #3D3A58;
   font-size: 18px;
   text-align: center;
