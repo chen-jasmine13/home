@@ -188,9 +188,12 @@ nav li a:hover {
     font-size: 40px;
   }
 
-  .gallery>.evermore>h2,
-  .gallery>.midnights>h2 {
+  .gallery>.evermore>h2 {
     font-size: 32px;
+  }
+
+  .gallery>.midnights>h2 {
+    font-size: 28px
   }
 
   .gallery>.fearless>ul,
