@@ -1,0 +1,259 @@
+/* this is a cascading style sheet to format our webpage */
+
+/* formats the background */
+body {
+  background-color: white;
+  padding: 0;
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+/* header size */
+header {
+  background-image: url("images/ts_header.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  text-align: center;
+  border-bottom: 10px solid white;
+}
+
+/* header title */
+h1 {
+  margin: 0;
+  padding-top: 30px;
+}
+
+h1>a {
+  font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
+  font-size: 2.2em;
+  font-weight: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+/* navigation bar size */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  margin-left: -40px;
+  padding-bottom: 15px;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* navigation bar text */
+nav li {
+  margin: 10px;
+  display: inline-block;
+}
+
+/* navigation bar links */
+nav li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+/* navigation bar links hovered */
+nav li a:hover {
+  text-decoration: underline;
+}
+
+/* container for bio, achievements, and rerecording articles */
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 5px;
+  margin: 30px;
+}
+
+/* formats box for each article */
+.box {
+  flex: 0 0 calc(33.33% - 20px);
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+/* formats box differently for smaller screens */
+@media (max-width: 980px) {
+  .container {
+    padding-top: 5px;
+    flex-direction: column;
+    /* changes flex direction to column on smaller screens */
+    align-items: center;
+  }
+
+  .box {
+    flex: 0 0 100%;
+    max-width: 400px;
+  }
+}
+
+/* wrapper for image transition */
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* formats images in wrapper */
+.wrapper>img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* formats active image for each box */
+.wrapper>.hover {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* transitions when wrapper is hovered */
+.wrapper:hover>.hover {
+  opacity: 1;
+}
+
+/* formats text in box */
+.wrapper>.boxtext {
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  color: white;
+  text-decoration: none;
+  font-size: 50px;
+  margin-bottom: 0.2em;
+}
+
+p {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  margin-top: 0.2em;
+}
+
+/* formats text differently for smaller screens */
+@media (max-width: 980px) {
+  .boxtext>h2 {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    margin-bottom: 0.2em;
+  }
+
+  .boxtext>p {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 0.8em;
+  }
+}
+
+/* container for tour page */
+.container2 {
+  width: 100%;
+}
+
+/* wrapper for images */
+.wrapper2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* formats inactive image */
+.wrapper2>img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* formats active image */
+.wrapper2>.erastour {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.wrapper2:hover>.erastour {
+  opacity: 1;
+}
+
+/* formats text in box */
+.wrapper2>.boxtext {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 60%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+}
+
+#erastour {
+  color: white;
+  text-decoration: none;
+  font-size: 120px;
+  margin-bottom: 0.1em;
+}
+
+#erastour2 {
+  color: white;
+  text-decoration: none;
+  font-size: 65px;
+  margin-bottom: 0.2em;
+}
+
+/* formats text differently for smaller images */
+@media (max-width: 980px) {
+  .wrapper2>.boxtext {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 60%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+  }
+
+  #erastour {
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+    margin-bottom: 0.1em;
+  }
+
+  #erastour2 {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    margin-bottom: 0.1em;
+  }
+}

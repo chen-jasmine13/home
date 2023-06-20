@@ -1,0 +1,287 @@
+/* formats the background */
+body {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px
+}
+
+/* header size */
+header {
+  background-image: url("images/ts_header.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  text-align: center;
+  border-bottom: 10px solid white;
+}
+
+/* header title */
+h1 {
+  margin: 0;
+  padding-top: 30px;
+}
+
+h1>a {
+  font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
+  font-size: 2.2em;
+  font-weight: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+/* navigation bar size */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  margin-left: -40px;
+  padding-bottom: 15px;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* navigation bar text */
+nav li {
+  margin: 10px;
+  display: inline-block;
+}
+
+/* navigation bar links */
+nav li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+/* navigation bar links hovered */
+nav li a:hover {
+  text-decoration: underline;
+}
+
+/* creates 12x12 grid for images */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  justify-content: center;
+  align-content: center;
+}
+
+/* formats images inside gallery */
+.gallery>div>.galleryimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* formats image divs */
+.gallery>div {
+  margin: 10px;
+  padding: 0;
+  position: relative;
+}
+
+/* formats header in div */
+.gallery>div>h2 {
+  color: white;
+  margin-top: 12.5px;
+  margin-left: 12.5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 10px;
+}
+
+/* formats text in div */
+.gallery>div>ul,
+.gallery>div>p {
+  position: absolute;
+  color: white;
+  margin-top: 12.5px;
+  margin-left: 12.5px;
+}
+
+/* formats header in div */
+.gallery>.debut>h2,
+.gallery>.speaknow>h2,
+.gallery>.reputation>h2,
+.gallery>.lover>h2,
+.gallery>.fearlesstv>h2,
+.gallery>.redtv>h2 {
+  font-size: 40px;
+}
+
+/* formats text in div */
+.gallery>.debut>ul,
+.gallery>.speaknow>ul,
+.gallery>.reputation>ul,
+.gallery>.lover>ul,
+.gallery>.fearlesstv>p,
+.gallery>.redtv>ul {
+  top: 55px;
+  font-size: 18px;
+}
+
+/* formats header in div */
+.gallery>.fearless>h2,
+.gallery>.nineteen-eightynine>h2,
+.gallery>.folklore>h2,
+.gallery>.evermore>h2,
+.gallery>.midnights>h2,
+.gallery>.red>h2 {
+  font-size: 60px
+}
+
+/* formats text in div */
+.gallery>.fearless>ul,
+.gallery>.nineteen-eightynine>ul,
+.gallery>.folklore>ul,
+.gallery>.evermore>ul,
+.gallery>.midnights>ul,
+.gallery>.red>ul {
+  top: 72px;
+  font-size: 32px
+}
+
+/* formats text and headers differently on smaller screens */
+@media (max-width:980px) {
+
+  .gallery>.debut>h2,
+  .gallery>.speaknow>h2,
+  .gallery>.reputation>h2,
+  .gallery>.lover>h2,
+  .gallery>.fearlesstv>h2,
+  .gallery>.redtv>h2 {
+    font-size: 22px;
+  }
+
+  .gallery>.debut>ul,
+  .gallery>.speaknow>ul,
+  .gallery>.reputation>ul,
+  .gallery>.lover>ul,
+  .gallery>.fearlesstv>p,
+  .gallery>.redtv>ul {
+    top: 36px;
+    font-size: 11px;
+  }
+
+  .gallery>.fearless>h2,
+  .gallery>.nineteen-eightynine>h2,
+  .gallery>.folklore>h2,
+  .gallery>.evermore>h2,
+  .gallery>.midnights>h2,
+  .gallery>.red>h2 {
+    font-size: 40px
+  }
+
+  .gallery>.fearless>ul,
+  .gallery>.nineteen-eightynine>ul,
+  .gallery>.folklore>ul,
+  .gallery>.evermore>ul,
+  .gallery>.midnights>ul,
+  .gallery>.red>ul {
+    top: 53px;
+    font-size: 20px
+  }
+}
+
+/* declares where each image goes on the grid */
+.debut {
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  object-fit: cover;
+}
+
+.fearless {
+  grid-column-start: 8;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  object-fit: cover;
+}
+
+.speaknow {
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  object-fit: cover;
+}
+
+.red {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  object-fit: cover;
+}
+
+.nineteen-eightynine {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 9;
+  object-fit: cover;
+}
+
+.reputation {
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  object-fit: cover;
+}
+
+.lover {
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 7;
+  grid-row-end: 9;
+  object-fit: cover;
+}
+
+.folklore {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 9;
+  grid-row-end: 13;
+  object-fit: cover;
+}
+
+.evermore {
+  grid-column-start: 9;
+  grid-column-end: 13;
+  grid-row-start: 9;
+  grid-row-end: 13;
+  object-fit: cover;
+}
+
+.fearlesstv {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 9;
+  grid-row-end: 11;
+  object-fit: cover;
+}
+
+.redtv {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 11;
+  grid-row-end: 13;
+  object-fit: cover;
+}
+
+.midnights {
+  grid-column-start: 10;
+  grid-column-end: 13;
+  grid-row-start: 5;
+  grid-row-end: 9;
+  object-fit: cover;
+}

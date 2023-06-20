@@ -1,0 +1,73 @@
+/* formats the background */
+body {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px
+}
+
+/* header size */
+header {
+  background-image: url("images/ts_header.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  text-align: center;
+  border-bottom: 10px solid white;
+}
+
+/* header title */
+h1 {
+  margin: 0;
+  padding-top: 30px;
+}
+
+h1>a {
+  font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
+  font-size: 2.2em;
+  font-weight: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+/* navigation bar size */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  margin-left: -40px;
+  padding-bottom: 15px;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* navigation bar text */
+nav li {
+  margin: 10px;
+  display: inline-block;
+}
+
+/* navigation bar links */
+nav li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+/* navigation bar links hovered */
+nav li a:hover {
+  text-decoration: underline;
+}
+
+/* formats subheading */
+h2 {
+  margin: 15px;
+}
+
+/* formats text */
+h2,
+p {
+  margin-left: 20%;
+  margin-right: 20%;
+}

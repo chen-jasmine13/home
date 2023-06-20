@@ -1,0 +1,172 @@
+/* formats the background */
+body {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px
+}
+
+/* header size */
+header {
+  background-image: url("images/ts_header.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  text-align: center;
+  border-bottom: 10px solid white;
+}
+
+/* header title */
+h1 {
+  margin: 0;
+  padding-top: 30px;
+}
+
+h1>a {
+  font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
+  font-size: 2.2em;
+  font-weight: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+/* navigation bar size */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  margin-left: -40px;
+  padding-bottom: 15px;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* navigation bar text */
+nav li {
+  margin: 10px;
+  display: inline-block;
+}
+
+/* navigation bar links */
+nav li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+/* navigation bar links hovered */
+nav li a:hover {
+  text-decoration: underline;
+}
+
+/* formats the section for each paragraph */
+.sectionblue,
+.sectionwhite {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-radius: 25px;
+}
+
+/* alternates background color */
+.sectionblue {
+  background-color: #3D3A58;
+}
+
+.sectionwhite {
+  background-color: white;
+  border: 2px solid #3D3A58
+}
+
+/* formats section differently for smaller screens */
+@media (max-width:980px) {
+
+  .sectionblue,
+  .sectionwhite {
+    /* changes flex direction to column on smaller screens */
+    flex-direction: column;
+  }
+}
+
+/* formats paragraph text */
+.sectionblue p,
+.sectionwhite p {
+  flex: 1;
+  text-align: justify;
+}
+
+/* alternates text colour */
+.textleft {
+  color: #3D3A58;
+  font-size: 22px;
+  margin-left: 18px
+}
+
+.textright {
+  color: white;
+  font-size: 22px;
+  margin-right: 18px;
+}
+
+@media (max-width:980px) {
+  .textleft {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+
+  .textright {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+}
+
+/* seperates each section */
+hr {
+  opacity: 0;
+}
+
+/* format a box for text and caption */
+figure {
+  height: auto;
+  width: 30%;
+  margin-right: 18px;
+  margin-left: 18px;
+}
+
+/* formats image */
+figure img,
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+}
+
+.captionblue img {
+  border: 1px solid #3D3A58;
+}
+
+.captionwhite img {
+  border: 1px solid white;
+}
+
+/* formats image caption */
+.captionwhite>figcaption {
+  size: 10px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+.captionblue>figcaption {
+  size: 10px;
+  color: #3D3A58;
+  font-size: 18px;
+  text-align: center;
+}
