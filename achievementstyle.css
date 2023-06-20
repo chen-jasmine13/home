@@ -105,6 +105,7 @@ nav li a:hover {
 }
 .gallery>div>p {
   position: absolute;
+  top: 36px;
   font-size: 18px;
   color: white;
   margin-top: 12.5px;
