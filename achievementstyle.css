@@ -163,9 +163,12 @@ nav li a:hover {
   .gallery>.speaknow>h2,
   .gallery>.reputation>h2,
   .gallery>.lover>h2,
-  .gallery>.fearlesstv>h2,
-  .gallery>.redtv>h2 {
+  .gallery>.fearlesstv>h2 {
     font-size: 22px;
+  }
+
+  .gallery>.redtv>h2 {
+    font-size: 20px;
   }
 
   .gallery>.debut>ul,
@@ -181,12 +184,12 @@ nav li a:hover {
   .gallery>.fearless>h2,
   .gallery>.nineteen-eightynine>h2,
   .gallery>.folklore>h2,
-  .gallery>.evermore>h2,
   .gallery>.red>h2 {
     font-size: 40px;
   }
 
-  .gallery>.midnights>h2, {
+  .gallery>.evermore>h2,
+  .gallery>.midnights>h2 {
     font-size: 32px;
   }
 
