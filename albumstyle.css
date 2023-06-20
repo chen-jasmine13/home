@@ -315,3 +315,9 @@ td {
 .title {
   width: 20%;
 }
+
+/* formats validator */
+.validator {
+  width: 75px;
+  height: 25px;
+}
