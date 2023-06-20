@@ -131,9 +131,12 @@ nav li a:hover {
 .gallery>.nineteen-eightynine>h2,
 .gallery>.folklore>h2,
 .gallery>.evermore>h2,
-.gallery>.midnights>h2,
 .gallery>.red>h2 {
-  font-size: 60px
+  font-size: 60px;
+}
+
+.gallery>.midnights>h2, {
+  font-size: 52px;
 }
 
 /* formats text in div */
@@ -173,9 +176,12 @@ nav li a:hover {
   .gallery>.nineteen-eightynine>h2,
   .gallery>.folklore>h2,
   .gallery>.evermore>h2,
-  .gallery>.midnights>h2,
   .gallery>.red>h2 {
-    font-size: 40px
+    font-size: 40px;
+  }
+
+  .gallery>.midnights>h2, {
+    font-size: 32px;
   }
 
   .gallery>.fearless>ul,
@@ -185,7 +191,7 @@ nav li a:hover {
   .gallery>.midnights>ul,
   .gallery>.red>ul {
     top: 53px;
-    font-size: 20px
+    font-size: 20px;
   }
 }
 
