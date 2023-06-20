@@ -176,3 +176,9 @@ nav li a:hover {
   grid-row-end: 4;
   object-fit: cover;
 }
+
+/* formats validator */
+.validator {
+  width: 75px;
+  height: 25px;
+}
