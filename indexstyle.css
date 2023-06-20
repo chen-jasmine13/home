@@ -256,3 +256,8 @@ p {
     margin-bottom: 0.1em;
   }
 }
+
+.validator{
+    width: 150px;
+    height: 50px;
+}
