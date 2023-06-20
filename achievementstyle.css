@@ -97,7 +97,7 @@ nav li a:hover {
 }
 
 /* formats text in div */
-.gallery>div>ul, {
+.gallery>div>ul {
   position: absolute;
   color: white;
   margin-top: 12.5px;
